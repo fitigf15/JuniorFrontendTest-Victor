@@ -89,7 +89,7 @@ p{
 
 }
 
-#div-not-found{
+#div-not-found, #p-repos-not-found{
     margin-top: 15px;
     background-color: #f0bcc3;
     color: darkred;
@@ -128,12 +128,12 @@ p{
     padding-bottom: 10px;
 }
 
-#div-repos-found{
+#div-user-repos-found{
     max-height: 350px;
     overflow-y: scroll;
 }
 
-#div-repos-found::-webkit-scrollbar{
+#div-user-repos-found::-webkit-scrollbar{
     display: none;
 }
 

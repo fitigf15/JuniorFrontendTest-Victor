@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <title>Junior Frontend Test</title>
+    <script src="app/src/controller/controller.js"></script>
+    <script src="app/src/model/Repo.js"></script>
+    <script src="app/src/model/User.js"></script>
+    <script src="app/src/view/view.js"></script>
+    <script>
+        window.addEventListener("load",app.view.mainView.setupInitialView);
+    </script>
 
 </head>
 <body>
-<script src="js/juniorfrontendtest.js"></script>
+    <div id='div-body' class='container'>
+        <div id='div-main' class='container'>
+            <div id='div-header' class='container'>
+                <input type='text' id='input-search-text' class='search-text row left' placeholder='Search username...' autofocus>
+                <button type='button' id='button-search' class='button-search row left'>Search</button>
+            </div>
+            <div id='div-search-result' class='search-result container' style='display:none;'>
+                <div id='div-not-found'>
+                    <p id='p-user-not-found'> Does not exist! </p>
+                </div>
+                <div id='div-user-profile' class='container'>
+                    <div id='div-user-pic' class='row left'>
+                        <img id='img-user-pic'></img>
+                    </div>
+                    <div id='div-user-description' class='row left'>
+                        <p id='p-login'></p>
+                        <p id='p-name'></p>
+                        <p id='p-bio'></p>
+                    </div>
+                </div>
+                <div id='div-user-repos' style='display:none;'>
+                    <div id='div-repos-found'>
+                        <p id='p-repos-found'>Repositories</p>
+                        <p id='p-repos-not-found'>No repositories found.</p>
+                        <div id='div-user-repos-found'>
+                            <ul id='ul-user-repos'></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
