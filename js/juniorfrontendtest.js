@@ -1,3 +1,6 @@
+/*
+functions for testing used in the first commit, you can ignore this file
+*/
 function userSearch(user)
 {
     var xmlHttp = new XMLHttpRequest();
